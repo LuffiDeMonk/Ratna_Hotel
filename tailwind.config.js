@@ -9,6 +9,7 @@ export default {
       },
       colors: {
         websiteRed: "#F42F2C",
+        websiteGray: "#F9F9FF",
       },
       textColor: {
         websiteText: "#F42F2C",
