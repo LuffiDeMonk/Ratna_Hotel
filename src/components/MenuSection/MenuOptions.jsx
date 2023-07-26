@@ -78,7 +78,7 @@ const MenuOptions = () => {
     >
       {categoryData?.map((item) => (
         <SwiperSlide key={item.id}>
-          <div className="w-full h-full rounded-md shadow-lg bg-white p-4">
+          <div className="w-full h-full rounded-md shadow-lg bg-white p-4 group">
             <div className="flex items-center justify-center">
               <div className="w-24 h-24 rounded-full bg-websiteRed flex items-center justify-center">
                 <img
@@ -88,7 +88,7 @@ const MenuOptions = () => {
                 />
               </div>
             </div>
-            <h3 className="text-sm text-gray-600 font-light text-center my-4 capitalize">
+            <h3 className="text-sm text-gray-600 font-light text-center my-4 capitalize group-hover:text-websiteText transition-all duration-300 cursor-pointer">
               {item.name}
             </h3>
           </div>
