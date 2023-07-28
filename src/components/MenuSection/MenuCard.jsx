@@ -18,7 +18,7 @@ const MenuCard = ({ name }) => {
               <FiPlus />
             </button>
           </div>
-          <p className="text-xs font-light text-gray-400 my-2">
+          <p className="text-xs font-light text-gray-400 my-2 line-clamp-2">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id,
             voluptatum.
           </p>

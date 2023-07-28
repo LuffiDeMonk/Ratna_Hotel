@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const NavbarMenu = [
   "home",
@@ -46,12 +47,13 @@ const Navbar = () => {
         } h-16 flex items-center justify-center gap-5 text-xs text-white list-none uppercase `}
       >
         {NavbarMenu?.map((item) => (
-          <li
-            className="hover:text-websiteText duration-300 transition-all cursor-pointer font-[500] hidden md:block"
+          <NavLink
+            to={`/${item === "home" ? "" : item}`}
+            className={`hover:text-websiteText duration-300 transition-all cursor-pointer font-[500] hidden md:block`}
             key={item}
           >
             {item}
-          </li>
+          </NavLink>
         ))}
       </div>
     </div>
