@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+
+import "aos/dist/aos.css";
 
 import AboutImage from "../../assets/About.jpg";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="my-20 md:my-32 md:h-96 flex flex-col md:flex-row items-center justify-center max-w-screen-lg gap-6 lg:gap-13 mx-auto">
-      <div className="flex flex-col justify-center gap-4 md:gap-8 h-full px-12 md:px-4 lg:px-0">
+      <div
+        className="flex flex-col justify-center gap-4 md:gap-8 h-full px-12 md:px-4 lg:px-0"
+        data-aos="fade-up"
+      >
         <h1 className="text-3xl lg:text-4xl font-semibold">About Our Story</h1>
         <p className="text-sm leading-6 font-extralight text-gray-600">
           Who are in extremely love with eco friendly system. Lorem ipsum dolor
@@ -18,7 +28,10 @@ const About = () => {
           View Full Menu
         </button>
       </div>
-      <div className="w-full md:basis-1/2 md:shrink-0 px-12 md:px-4 lg:px-0 h-full">
+      <div
+        className="w-full md:basis-1/2 md:shrink-0 px-12 md:px-4 lg:px-0 h-full"
+        data-aos="fade-down"
+      >
         <img
           src={AboutImage}
           alt=""

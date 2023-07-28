@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 
-import HeroImage from "../../assets/HeroImage.jpg";
+import "aos/dist/aos.css";
+
+import HeroImage from "../../assets/HeroImage.png";
 
 const HeroSection = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className="h-screen relative">
       <img src={HeroImage} alt="" className="w-full h-full object-cover" />
-      <div className="text-white absolute top-60 sm:top-60 left-6 md:top-56 lg:left-48">
+      <div
+        className="text-white absolute top-60 sm:top-60 left-6 md:top-56 lg:left-48"
+        data-aos="fade-up"
+      >
         <h1 className="text-sm font-light tracking-[4px]">
           WIDE OPTIONS OF CHOICE
         </h1>

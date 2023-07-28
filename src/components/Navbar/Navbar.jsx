@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import { NavLink } from "react-router-dom";
 
 const NavbarMenu = [
@@ -38,7 +40,14 @@ const Navbar = () => {
     >
       {toggleLogo && (
         <div className="flex items-center justify-center">
-          <img src="/Logo.png" alt="" className="w-32 h-32 object-contain" />
+          <LazyLoadImage
+            src="/Logo.png"
+            width="128px"
+            height="128px"
+            effect="blur"
+            visibleByDefault={true}
+          />
+          {/* <img src="/Logo.png" alt="" className="w-32 h-32 object-contain" /> */}
         </div>
       )}
       <div

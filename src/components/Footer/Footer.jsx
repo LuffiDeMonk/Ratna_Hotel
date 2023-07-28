@@ -57,7 +57,7 @@ const Footer = () => {
             placeholder="Enter Your Email"
             className="w-full h-full px-4 py-2 outline-none border-none focus:outline-none placeholder:text-sm placeholder:text-gray-400"
           />
-          <button className="w-9 h-9 rounded-full text-white text-sm bg-websiteRed flex items-center justify-center absolute top-1/2 right-1 -translate-y-1/2 outline-none focus:outline-none">
+          <button className="w-8 h-8 rounded-full text-white text-[16px] bg-websiteRed flex items-center justify-center absolute top-1/2 right-1 -translate-y-1/2 outline-none focus:outline-none">
             <AiOutlineArrowRight />
           </button>
         </div>
