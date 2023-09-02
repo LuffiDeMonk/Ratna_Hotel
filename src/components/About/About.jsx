@@ -3,7 +3,7 @@ import AOS from "aos";
 
 import "aos/dist/aos.css";
 
-import AboutImage from "../../assets/About.jpg";
+import AboutImage from "../../assets/About.webp";
 
 const About = () => {
   useEffect(() => {

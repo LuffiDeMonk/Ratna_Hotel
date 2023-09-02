@@ -10,18 +10,22 @@ import Cart from "./pages/Cart";
 
 import "swiper/css";
 import Home from "./pages/Home";
+import Dashboard from "./components/Dashboard/Dashboard";
+import Register from "./components/Register/Register";
 
 const App = () => {
   return (
     <div className="font-Poppins">
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/dashboard" element={<Dashboard />}></Route>
+        <Route path="/register" element={<Register />} />
       </Routes>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

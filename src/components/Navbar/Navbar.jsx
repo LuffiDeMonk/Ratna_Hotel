@@ -47,12 +47,11 @@ const Navbar = () => {
             effect="blur"
             visibleByDefault={true}
           />
-          {/* <img src="/Logo.png" alt="" className="w-32 h-32 object-contain" /> */}
         </div>
       )}
       <div
         className={`max-w-screen-lg mx-auto ${
-          toggleLogo ? "border-y-[0.2px] border-gray-300" : "border-none"
+          toggleLogo ? "border-y-[1px] border-gray-300/30" : "border-none"
         } h-16 flex items-center justify-center gap-5 text-xs text-white list-none uppercase `}
       >
         {NavbarMenu?.map((item) => (

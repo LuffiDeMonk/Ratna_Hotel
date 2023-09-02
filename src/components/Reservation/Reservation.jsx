@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import ReservationImage from "../../assets/Reservation.png";
+import ReservationImage from "../../assets/Reservation.webp";
 
 const Reservation = () => {
   useEffect(() => {
@@ -48,9 +48,9 @@ const Reservation = () => {
               className="h-10 w-full px-3 border border-gray-400/40 outline-none focus:outline-none placeholder:text-gray-500/80 placeholder:text-sm lg:h-12"
             />
             <input
-              type="text"
+              type="date"
               placeholder="Select Date & time"
-              className="h-10 w-full px-3 border border-gray-400/40 outline-none focus:outline-none placeholder:text-gray-500/80 placeholder:text-sm lg:h-12"
+              className="h-10 w-full px-3 border border-gray-400/40 outline-none focus:outline-none text-gray-500/80 text-sm lg:h-12"
             />
             <input
               type="text"
