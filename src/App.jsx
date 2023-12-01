@@ -12,6 +12,7 @@ import "swiper/css";
 import Home from "./pages/Home";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Register from "./components/Register/Register";
+import Login from "./components/Login/Login";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/cart" element={<Cart />} />
         <Route path="/dashboard" element={<Dashboard />}></Route>
         <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
 
       {/* <Footer /> */}
